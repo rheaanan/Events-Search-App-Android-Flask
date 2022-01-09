@@ -322,7 +322,7 @@ app.get('/getVenueDetails',(req, res) => {
 
 app.get('/getLocation',(req, res) => {
 	console.log('getting loc call with',req.query.location)
-	axios.get("https://maps.googleapis.com/maps/api/geocode/json?address="+req.query.location+"&key=AIzaSyC1IQkjNRBcenezJ8ukQEZXrXZe1t3I9jQ")
+	axios.get("https://maps.googleapis.com/maps/api/geocode/json?address="+req.query.location+"&key=xyz")
 	  .then(response => {
 
 	    var returned_data1 = response.data['results'][0]['geometry']['location'];
